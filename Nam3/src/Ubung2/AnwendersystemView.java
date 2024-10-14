@@ -1,11 +1,15 @@
 package Ubung2;
 
+import java.awt.TextField;
+
 import javafx.stage.Stage;
 
 public class AnwendersystemView extends AnwendersystemModel {
-	AnwendersystemControl anwControl;
-	AnwendersystemModel anwModel;
-	Stage primaryStage;
+	private AnwendersystemControl anwControl;
+	private AnwendersystemModel anwModel;
+	private Stage primaryStage;
+	TextField textField = new TextField();
+	
 	
 	public AnwendersystemView(AnwendersystemControl anwControl, AnwendersystemModel anwModel, Stage primaryStage) {
 		super();
@@ -13,7 +17,5 @@ public class AnwendersystemView extends AnwendersystemModel {
 		this.anwModel = anwModel;
 		this.primaryStage = primaryStage;
 	}
-	
-	
 	
 }

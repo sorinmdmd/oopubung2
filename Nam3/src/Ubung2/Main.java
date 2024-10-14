@@ -20,11 +20,9 @@ public class Main extends Application {
 		BorderPane root = new BorderPane();
 		Scene scene = new Scene(root,300,300);
 		primaryStage.setTitle(anwControl.anwModel.getUeberschrift());
-		
-		
+				
 		primaryStage.setScene(scene);
 		primaryStage.show();
-
 	}
 
 }

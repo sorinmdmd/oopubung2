@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 public class AnwendersystemControl {
 	AnwendersystemModel anwModel;
 	AnwendersystemView anwView;
-	Stage primaryStage;
+	private Stage primaryStage;
 
 	public AnwendersystemControl(Stage primaryStage) {
 		super();

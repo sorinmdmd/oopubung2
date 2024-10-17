@@ -14,5 +14,4 @@ public class AnwendersystemModel {
 		writer.write(text);
 		writer.close();
 	}
-
 }

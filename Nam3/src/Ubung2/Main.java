@@ -11,11 +11,7 @@ public class Main extends Application {
 		// TODO Auto-generated method stub
 		AnwendersystemControl anwControl = new AnwendersystemControl(primaryStage);
 
-		Scene scene = new Scene(anwControl.anwView.getRoot(), 300, 300);
 		primaryStage.setTitle(anwControl.anwModel.getUeberschrift());
-
-		primaryStage.setScene(scene);
-		primaryStage.show();
 	}
 
 	public static void main(String[] args) {

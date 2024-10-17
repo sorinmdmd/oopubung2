@@ -1,5 +1,6 @@
 package Ubung2;
 
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -12,6 +13,7 @@ public class AnwendersystemView extends AnwendersystemModel {
 	private BorderPane root;
 	private TextField textField;
 	private Button button;
+	private Scene scene;
 	
 	public AnwendersystemView(AnwendersystemControl anwControl, AnwendersystemModel anwModel, Stage primaryStage) {
 		super();
@@ -23,6 +25,9 @@ public class AnwendersystemView extends AnwendersystemModel {
 		root = new BorderPane();
 		root.setCenter(textField);
 	    root.setRight(button);
+		scene = new Scene(root, 400, 400);
+		primaryStage.setScene(scene);
+		primaryStage.show();
 	}
 
 	public TextField getTextField() {
@@ -35,6 +40,10 @@ public class AnwendersystemView extends AnwendersystemModel {
 
 	public Button getButton() {
 		return button;
+	}
+
+	public Scene getScene() {
+		return scene;
 	}
 	
 	

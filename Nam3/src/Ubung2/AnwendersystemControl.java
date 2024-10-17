@@ -20,18 +20,17 @@ public class AnwendersystemControl {
 	}
 
 	private void handleButtonClick() {
+		
 		String text = anwView.getTextField().getText();
-
-	
-			// Text wird in die Datei geschrieben
-			try {
-				anwModel.WriteText(text);
-				showAlert(AlertType.INFORMATION, "Meldung", "Der Text wurde in die Datei geschrieben.");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				showAlert(AlertType.ERROR, "Fehler", "Beim Schreiben der Datei ist ein Fehler aufgetreten.");
-			}
+		
+		try {
+			anwModel.WriteText(text);
+			showAlert(AlertType.INFORMATION, "Meldung", "Der Text wurde in die Datei geschrieben.");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			showAlert(AlertType.ERROR, "Fehler", "Beim Schreiben der Datei ist ein Fehler aufgetreten.");
+		}
 	}
 
 	private void showAlert(AlertType alertType, String title, String message) {

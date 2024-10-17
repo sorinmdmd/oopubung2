@@ -10,8 +10,6 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		AnwendersystemControl anwControl = new AnwendersystemControl(primaryStage);
-
-		primaryStage.setTitle(anwControl.anwModel.getUeberschrift());
 	}
 
 	public static void main(String[] args) {

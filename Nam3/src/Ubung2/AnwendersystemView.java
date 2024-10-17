@@ -26,6 +26,7 @@ public class AnwendersystemView extends AnwendersystemModel {
 		root.setCenter(textField);
 	    root.setRight(button);
 		scene = new Scene(root, 400, 400);
+		primaryStage.setTitle(anwModel.getUeberschrift());
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
